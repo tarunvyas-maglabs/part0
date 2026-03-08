@@ -11,5 +11,5 @@ sequenceDiagram
     server-->>browser: Status code 201
     deactivate server
     
-    Note over browser: JavaScript updates notes and rerenders the page
+    Note over browser: JavaScript updates notes and executes the callback function to rerender the notes 
 ```

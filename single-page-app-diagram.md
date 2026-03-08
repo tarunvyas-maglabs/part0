@@ -18,12 +18,12 @@ sequenceDiagram
     server-->>browser: the JavaScript file
     deactivate server
 
-    Note over browser: Javascript executes and fetches notes
+    Note over browser: The browser starts executing the JavaScript code that fetches the JSON from the server
 
     browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/data.json
     activate server
     server-->>browser: JSON containing notes
     deactivate server
 
-    Note over browser: Renders notes
+    Note over browser: The browser executes the callback function that renders the notes 
 ```
